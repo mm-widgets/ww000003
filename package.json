@@ -1,7 +1,7 @@
 {
-	"name": "@mmstudio/widgets",
+	"name": "@mmstudio/ww000003",
 	"version": "1.0.0",
-	"description": "",
+	"description": "文件上传",
 	"scripts": {
 		"dev": "npm run watch-umd & gulp browser-sync-amd",
 		"ie": "npm run watch & webpack & gulp browser-sync-ie",
@@ -14,12 +14,11 @@
 		"compile-cjs": "tsc -m commonjs -d false",
 		"compile-esm": "tsc && mv ./dist/index.js ./dist/index.esm.js",
 		"compile": "npm run compile-esm && npm run compile-amd && npm run compile-cjs",
-		"build": "npm run clean && npm run lint && npm run compile",
-		"up": "git pull git@github.com:mm-core/base.git master"
+		"build": "npm run clean && npm run lint && npm run compile"
 	},
 	"repository": {
 		"type": "https+git",
-		"url": "https://github.com/mm-tpl/widgets-web.git"
+		"url": "https://github.com/mm-widgets/ww000003.git"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
@@ -35,8 +34,8 @@
 		"框架"
 	],
 	"author": {
-		"name": "$user",
-		"email": "$email@xxx.com"
+		"name": "taoqf",
+		"email": "tao_qiufeng@126.com"
 	},
 	"maintainers": [
 		{
