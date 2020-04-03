@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/ww000003",
-	"version": "1.0.0",
+	"version": "1.0.202004031607",
 	"description": "文件上传",
 	"scripts": {
 		"dev": "npm run watch-umd & gulp browser-sync-amd",
