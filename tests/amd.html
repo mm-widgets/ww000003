@@ -9,11 +9,54 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>文件上传</title>
+	<style>
+		.xx {
+			float: left;
+		}
+	</style>
 </head>
 
 <body>
-	<mm-000003 id="widget"></mm-000003>
-	<input type="button" value="test" id="test">
+	<mm-000003 class="xx" id='w1' style="width: 500px" multiple searchPlaceholder='请输入' text-field='text'
+		data='[{"text":"一二三"},{"text":"BBBBBB"},{"text":"CCCCCC"},{"text":"DDDDDD"},{"text":"EEEEEE"}]' searchText='没找到'
+		allowDeselect placeholder='请选择---------------------------'>
+	</mm-000003>
+
+	<mm-000003 class="xx" id='w2' width='500px' searchPlaceholder='请输入' text-field='text'
+		data='[{"text":"AAAAAA", "value":123, "value2": "abc"},{"text":"BBBBBB"},{"text":"CCCCCC"},{"text":"DDDDDD"},{"text":"EEEEEE"}]'
+		searchText='没找到' allowDeselect placeholder='请选择'>
+	</mm-000003>
+
+	<mm-000003 class="xx" id='w3' width='500px' searchPlaceholder='请输入'
+		data='["AAAAAA","BBBBBB","CCCCCC","DDDDDD","EEEEEE"]' searchText='没找到' allowDeselect placeholder='请选择'>
+	</mm-000003>
+
+	<mm-000003 class="xx" id='w4' style="width: 500px" multiple searchPlaceholder='请输入' text-field='text'
+		catagory-field="c"
+		data='[{"text":"一二三", "c": "aaa"},{"text":"BBBBBB", "c": "bbb"},{"text":"CCCCCC", "c": "ccc"},{"text":"DDDDDD", "c": "ddd"},{"text":"EEEEEE", "c": "eee"}]'
+		searchText='没找到' allowDeselect placeholder='请选择---------------------------'>
+	</mm-000003>
+
+	<mm-000003 class="xx" id='w5' style="width: 500px">
+		<option value="value 1">Value 1</option>
+		<option value="value 2">Value 2</option>
+		<option value="value 3">Value 3</option>
+	</mm-000003>
+	<mm-000003 class="xx" id='w6' style="width: 500px" multiple>
+		<optgroup label="Label 1">
+			<option value="value 1">Value 1</option>
+			<option value="value 2">Value 2</option>
+			<option value="value 3">Value 3</option>
+		</optgroup>
+		<optgroup label="Label 2">
+			<option value="value 21">Value 1</option>
+			<option value="value 22">Value 2</option>
+			<option value="value 23">Value 3</option>
+		</optgroup>
+	</mm-000003>
+	<input type="button" id="btn" value="获取选中值">
+	<input type="button" id="btn2" value="禁用">
+	<input type="button" id="btn3" value="解用">
 	<script src="./@dojo/loader/loader.js"></script>
 	<script>
 		var global = window;
@@ -24,6 +67,10 @@
 				name: '@mmstudio/on',
 				location: '@mmstudio/on/dist',
 				main: 'main'
+			}, {
+				name: 'mobius1-selectr',
+				location: 'mobius1-selectr/src',
+				main: 'selectr'
 			}]
 		});
 		require(['./tests/test']);

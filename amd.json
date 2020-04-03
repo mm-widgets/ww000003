@@ -3,5 +3,10 @@
 		"name": "@mmstudio/ww000003",
 		"location": "@mmstudio/ww000003/dist",
 		"main": "main"
+	},
+	{
+		"name": "mobius1-selectr",
+		"location": "mobius1-selectr/src",
+		"main": "selectr"
 	}
 ]

@@ -1,1 +1,17 @@
-<mm-000003 data-mm-id="000003"></mm-000003>
+<!-- 下拉搜索框 列表  -->
+<mm-000003 multiple placeholder='${4:请选择}' searchPlaceholder='${5:请输入}' ${6:allowDeselect} searchText='${7:没找到}'>
+	{{~it:v}}
+	<option value="{{=v.$1}}">{{=v.$2}}</option>
+	{{~}}
+</mm-000003>
+
+<!-- 下拉搜索框 分组列表  -->
+<mm-000003 multiple placeholder='$4' searchPlaceholder='$5' $6 searchText='$7'>
+	{{~it:g}}
+	<optgroup label="{{=g.$3}}">
+		{{~g.$4:v}}
+		<option value="{{=v.$1}}">{{=v.$2}}</option>
+		{{~}}
+	</optgroup>
+	{{~}}
+</mm-000003>
