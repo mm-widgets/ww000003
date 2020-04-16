@@ -21,6 +21,7 @@
 		"type": "https+git",
 		"url": "https://github.com/mm-tpl/widgets-web.git"
 	},
+	"homepage": "https://mm-works.github.io",
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
