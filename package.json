@@ -14,7 +14,8 @@
 		"compile-cjs": "tsc -m commonjs -d false",
 		"compile-esm": "tsc && mv ./dist/index.js ./dist/index.esm.js",
 		"compile": "npm run compile-esm && npm run compile-amd && npm run compile-cjs",
-		"build": "npm run clean && npm run lint && npm run compile"
+		"build": "npm run clean && npm run lint && npm run compile",
+		"up": "git pull git@github.com:mm-tpl/widgets-web.git master"
 	},
 	"repository": {
 		"type": "https+git",
@@ -46,7 +47,7 @@
 	],
 	"license": "MIT",
 	"dependencies": {
-		"@mmstudio/on": "^1.0.202003041352",
+		"@mmstudio/on": "^1.0.202004161718",
 		"mobius1-selectr": "^2.4.13"
 	},
 	"devDependencies": {
